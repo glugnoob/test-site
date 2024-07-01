@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+    <style>
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      .add-friend {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      }
+      .cat {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        height: 200px;
+        object-fit: cover;
+      }
+      .account-name {
+        font-weight: 600;
+        font-size: 18px;
+        margin: 5px 0 8px 5px;
+      }
+      .add-button {
+        background-color: rgb(52, 78, 209);
+        color: white;
+        padding: 8px 17px;
+        border-style: none;
+        margin: 0 0 10px 5px;
+        transition: 0.2s;
+      }
+      .add-button:hover {
+        opacity: 0.7;
+      }
+      .account-row {
+        margin-bottom: 10px;
+        margin-left: 3px;
+      }
+      .profile {
+        width: 15%;
+        display: inline-block;
+      }
+      .mutual {
+        width: 75%;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .profile-image {
+        width: 100%;
+        border-radius: 50%;
+      }
+      .practice-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="practice-grid">
+      <div class="add-friend">
+        <div class="image-row">
+          <img src="cat.jpg" alt="" class="cat" />
+        </div>
+        <div class="information-row">
+          <p class="account-name">Oliver</p>
+          <div class="account-row">
+            <div class="profile">
+              <img src="profiles/channel-1.jpeg" alt="" class="profile-image" />
+            </div>
+            <div class="mutual">
+              <p class="mutual-friends">2 mutual friends</p>
+            </div>
+          </div>
+          <button class="add-button">Add Friend</button>
+        </div>
+      </div>
+      <div class="add-friend">
+        <div class="image-row">
+          <img src="cat.jpg" alt="" class="cat" />
+        </div>
+        <div class="information-row">
+          <p class="account-name">Oliver</p>
+          <div class="account-row">
+            <div class="profile">
+              <img src="profiles/channel-1.jpeg" alt="" class="profile-image" />
+            </div>
+            <div class="mutual">
+              <p class="mutual-friends">2 mutual friends</p>
+            </div>
+          </div>
+          <button class="add-button">Add Friend</button>
+        </div>
+      </div>
+      <div class="add-friend">
+        <div class="image-row">
+          <img src="cat.jpg" alt="" class="cat" />
+        </div>
+        <div class="information-row">
+          <p class="account-name">Oliver</p>
+          <div class="account-row">
+            <div class="profile">
+              <img src="profiles/channel-1.jpeg" alt="" class="profile-image" />
+            </div>
+            <div class="mutual">
+              <p class="mutual-friends">2 mutual friends</p>
+            </div>
+          </div>
+          <button class="add-button">Add Friend</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

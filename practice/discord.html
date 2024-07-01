@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discord</title>
+    <style>
+      .sidebar {
+        display: flex;
+        background-color: rgb(54, 52, 52);
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 280px;
+      }
+
+      .channels {
+        width: 100px;
+        background-color: rgb(25, 41, 41);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .selected-channel {
+        flex: 1;
+      }
+      .channel-image {
+        width: 60px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 50%;
+        margin: 5px 0;
+      }
+
+      .channel-section-title {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin: 10px 0;
+        align-items: center;
+      }
+
+      .channel-title {
+        color: white;
+        font: Arial;
+      }
+      .add-channel {
+        color: rgb(192, 186, 186);
+        font-style: 700;
+        font-size: 25px;
+      }
+      .channel-1,
+      .channel-2,
+      .channel-3 {
+        color: rgb(154, 151, 151);
+        font-family: Arial;
+        margin: 10px 0 10px 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="channels">
+        <div class="channel">
+          <img src="cat.jpg" alt="" class="channel-image" />
+        </div>
+        <div class="channel">
+          <img src="cat.jpg" alt="" class="channel-image" />
+        </div>
+        <div class="channel">
+          <img src="cat.jpg" alt="" class="channel-image" />
+        </div>
+      </div>
+      <div class="selected-channel">
+        <div class="channel-section-title">
+          <div class="channel-title">INFO</div>
+          <div class="add-channel">+</div>
+        </div>
+        <div class="channel-1"># new-videos</div>
+        <div class="channel-2"># updates</div>
+        <div class="channel-3"># faq</div>
+      </div>
+    </div>
+  </body>
+</html>
